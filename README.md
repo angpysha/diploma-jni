@@ -101,4 +101,6 @@ This instrunctions can help you to compile this library
             
              ``$ make``
                      
+## License
 
+This project is licensing by Apache 2 license. See [LICENSE](https://github.com/angpysha/diploma-jni/blob/master/LICENSE)
