@@ -14,11 +14,11 @@ LINKERINCLUDEE ?= -lwiringPi -lwiringPiDev
 all: com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.h DHTAdapter.cpp DHTAdapter.h
 		#Compilation process Embedded
 		#Compile DHTAdapter.o
-		@$(CXC) $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE)  DHTAdapter.cpp
+		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE)  DHTAdapter.cpp
 		#Compile com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o
-		@$(CXC) $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE)  com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp
+		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE)  com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp
 		#Linking
-		@$(CXC) -shared -fPIC -o libdhtdata.so com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o DHTAdapter.o $(LINKERINCLUDE)
+		@$(CXC) -std=c++11 -shared -fPIC -o libdhtdata.so com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o DHTAdapter.o $(LINKERINCLUDE)
 		
 clean: 
 	#Cleanup project
