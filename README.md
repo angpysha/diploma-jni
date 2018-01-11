@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-red.svg)](https://opensource.org/licenses/Apache-2.0) 
 [![Build Status](https://travis-ci.org/angpysha/diploma-jni.svg?branch=master)](https://travis-ci.org/angpysha/diploma-jni)
-[![Stage](https://img.shields.io/badge/stage-alpha-red.svg)]()
+[![Stage](https://img.shields.io/badge/stage-alpha-red.svg)](https://github.com/angpysha/diploma-jni)
 
 
 This repositry contains C++ code to access gpio with the help of wiringPi library. 

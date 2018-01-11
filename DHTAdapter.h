@@ -15,6 +15,7 @@
  */
 
 #include <vector>
+#include <memory>
 #define MAXTIMINGS	85
 #define DHTPIN		7
 
@@ -26,6 +27,8 @@ float getAverage(float nums[],int size);
 extern "C" int read_dht11_dat(int pin);
 extern "C" void ReadDhtData(int pin,float* temperature,float* humidity);
 extern "C" float getAverage(float nums[],int size);
+template<typename T> T getAverageEx(std::vector<T> els);
+template<typename T> void ReadDhtDataEx(int pin,std::shared_ptr<T> temperature, std::shared_ptr<T> humidity);
 #else
 int read_dht11_dat(int pin);
 void ReadDhtData(int pin,float* temperature,float* humidity);
