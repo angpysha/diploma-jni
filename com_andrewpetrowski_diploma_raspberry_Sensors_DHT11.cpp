@@ -21,7 +21,8 @@
 #include <iostream>
 
 /**
- * (Deprecated) Get sensor's data as DHT11_Data object
+ * Get sensor's data as DHT11_Data object
+ * @deprecated Use @see Java_com_andrewpetrowski_diploma_raspberry_Sensors_DHT11_readData
  * @param env Java environment
  * @param jobj Java class
  * @param pin Pin number (wiringPi mode)
