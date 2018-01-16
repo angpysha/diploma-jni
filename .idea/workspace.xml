@@ -12,8 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f92f468f-4238-4925-a658-70477f345851" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/DHTAdapter.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+              <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
               <folding>
                 <element signature="e#210#374#0" expanded="true" />
               </folding>
@@ -51,12 +51,11 @@
       <file leaf-file-name="DHTAdapter.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DHTAdapter.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
+            <state relative-caret-position="2261">
               <caret line="133" column="3" lean-forward="false" selection-start-line="133" selection-start-column="3" selection-end-line="133" selection-end-column="3" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <element signature="e#2602#2614#0" expanded="true" />
-                <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
               </folding>
             </state>
           </provider>
@@ -82,15 +81,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="740">
-                <caret line="95" column="24" lean-forward="true" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+              <first_editor relative-caret-position="17">
+                <caret line="95" column="24" lean-forward="false" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
                 <folding />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BMP180.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BMP180.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2800">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BMP180.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BMP180.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1134">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,11 +246,12 @@
       <workItem from="1513635631100" duration="45000" />
       <workItem from="1513635704013" duration="16000" />
       <workItem from="1513635746120" duration="8994000" />
+      <workItem from="1516121531676" duration="91000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38222000" />
+    <option name="totallyTimeSpent" value="38313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -272,28 +292,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DHTAdapter.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
-          <folding>
-            <element signature="e#210#374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DHTAdapter.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -356,7 +354,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -423,7 +420,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -471,7 +467,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -537,7 +532,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -567,7 +561,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -615,7 +608,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -653,7 +645,6 @@
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
@@ -704,7 +695,7 @@
     <entry file="file://$PROJECT_DIR$/DHTAdapter.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="17" lean-forward="false" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="17" />
+          <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
           <folding>
             <element signature="e#210#374#0" expanded="true" />
           </folding>
@@ -739,28 +730,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DHTAdapter.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
+        <state relative-caret-position="2261">
           <caret line="133" column="3" lean-forward="false" selection-start-line="133" selection-start-column="3" selection-end-line="133" selection-end-column="3" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#2602#2614#0" expanded="true" />
-            <marker date="1513688475211" expanded="true" signature="1465:1501" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="740">
-            <caret line="95" column="24" lean-forward="true" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+          <first_editor relative-caret-position="17">
+            <caret line="95" column="24" lean-forward="false" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BMP180.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2800">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BMP180.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1134">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
