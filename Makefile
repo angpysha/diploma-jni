@@ -3,7 +3,7 @@ CC ?= /mnt/d/Downloads/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/gcc-l
 CXC ?= /mnt/d/Downloads/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/gcc-linaro-7.2.1-2017.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-g++
 JAVAINCLUDE ?= -I/mnt/d/Downloads/jdk-8u151-linux-arm32-vfp-hflt/jdk1.8.0_151/include/ -I/mnt/d/Downloads/jdk-8u151-linux-arm32-vfp-hflt/jdk1.8.0_151/include/linux
 WIRINGPIINCLUDE ?= -I/mnt/d/IdeaProjects/wiringPi/wiringPi
-LINKERINCLUDE ?= -L/mnt/c/Users/andre/wiringPi/wiringPi/wiringPi -L/mnt/c/Users/andre/wiringPi/wiringPi/devLib -l:libwiringPi.so.2.44 -l:libwiringPiDev.so.2.44
+LINKERINCLUDE ?= -L/mnt/c/Users/andre/wiringPi/wiringPi/wiringPi -L/mnt/c/Users/andre/wiringPi/wiringPi/devLib -l:libwiringPi.so.2.44 -l:libwiringPiDev.so.2.44 -lm
 CFLAGS ?= -c -fpic
 
 CCE ?= g++
@@ -17,13 +17,19 @@ all: com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp com_andrewpetrowski
 		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE)  DHTAdapter.cpp
 		#Compile com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o
 		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE)  com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp
+		#Compile com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.o
+		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE) com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.cpp
+		#Compile BMP180.o
+		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE) BMP180.cpp
+		#Compile DHT11.o
+		@$(CXC) -std=c++11 $(CFLAGS) $(JAVAINCLUDE) $(WIRINGPIINCLUDE) DHT11.cpp
 		#Linking
-		@$(CXC) -std=c++11 -shared -fPIC -o libdhtdata.so com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o DHTAdapter.o $(LINKERINCLUDE)
+		@$(CXC) -std=c++11 -shared -fPIC -o libraspiinfo.so com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o DHTAdapter.o com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.o BMP180.o DHT11.o $(LINKERINCLUDE)
 		
 clean: 
 	#Cleanup project
 	@rm *.o
-	@rm libdhtdata.so
+	@rm libsensorshelper.so
 
 rasp: com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.h DHTAdapter.cpp DHTAdapter.h
 		#Compilation process
@@ -31,5 +37,6 @@ rasp: com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp com_andrewpetrowsk
 		@$(CCE) $(CFLAGS) $(JAVAINCLUDEE)  DHTAdapter.cpp
 		#Compile com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o
 		@$(CCE) $(CFLAGS) $(JAVAINCLUDEE)  com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.cpp
+		#Compile com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.o
 		#Linking
 		@$(CCE) -shared -fPIC -o libdhtdata.so com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.o DHTAdapter.o $(LINKERINCLUDEE)
