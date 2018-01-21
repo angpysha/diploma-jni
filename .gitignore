@@ -2,3 +2,5 @@
 *.so
 cmake-build-debug/
 .idea/workspace.xml
+cmake-build-debug-arm/
+cmake-build-release-arm/
