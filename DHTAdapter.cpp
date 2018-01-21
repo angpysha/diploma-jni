@@ -101,8 +101,8 @@ void ReadDhtData(int pin, float *temperature, float *humidity) {
 
         res = read_dht11_dat(pin);
         if (res) {
-            temperatures[i] = dht11_dat[2]**dht11_dat[3]*0.1*/;
-            humidities[i] = dht11_dat[0]/**dht11_dat[1]*0.1)*/;
+            temperatures[i] = dht11_dat[2]+dht11_dat[3]*0.1;
+            humidities[i] = dht11_dat[0]+dht11_dat[1]*0.1;
             i++;
         }
         delay(1000);
