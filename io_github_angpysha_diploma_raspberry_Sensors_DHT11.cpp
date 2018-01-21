@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-#include "com_andrewpetrowski_diploma_raspberry_Sensors_DHT11.h"
+#include "io_github_angpysha_diploma_raspberry_Sensors_DHT11.h"
 #include "DHTAdapter.h"
 #include <wiringPi.h>
 #include <stdlib.h>
@@ -30,7 +30,7 @@
  * @param pin Pin number (wiringPi mode)
  * @return DHT11_Data object
  */
-JNIEXPORT jobject JNICALL Java_com_andrewpetrowski_diploma_raspberry_Sensors_DHT11_GetDhtData
+JNIEXPORT jobject JNICALL Java_io_github_angpysha_diploma_1raspberry_Sensors_DHT11_GetDhtData
         (JNIEnv *env, jobject jobj, jint pin) {
     float humidity = 2, temperature = 5;
 
@@ -84,7 +84,7 @@ JNIEXPORT jstring JNICALL Java_com_andrewpetrowski_diploma_raspberry_Sensors_DHT
  * First is temperature
  * Second is humidity
  */
-JNIEXPORT jfloatArray JNICALL Java_com_andrewpetrowski_diploma_raspberry_Sensors_DHT11_readData
+JNIEXPORT jfloatArray JNICALL Java_io_github_angpysha_diploma_1raspberry_Sensors_DHT11_readData
         (JNIEnv *env, jobject jclass1, jint pin) {
     jfloatArray j_result = env->NewFloatArray(2);
     jfloat result[2];

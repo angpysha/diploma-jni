@@ -1,7 +1,7 @@
 //
 // Created by andre on 13.01.2018.
 //
-#include "com_andrewpetrowski_diploma_raspberry_Sensors_BMP180.h"
+#include "io_github_angpysha_diploma_raspberry_Sensors_BMP180.h"
 #include <wiringPi.h>
 #include <stdlib.h>
 #include <iostream>
@@ -11,7 +11,7 @@
 #include <unistd.h>
 #include <tuple>
 
-JNIEXPORT void JNICALL Java_com_andrewpetrowski_diploma_raspberry_Sensors_BMP180_Testing
+JNIEXPORT void JNICALL Java_io_github_angpysha_diploma_1raspberry_Sensors_BMP180_Testing
   (JNIEnv *env, jobject obj) {
     float temperature=11,pressure=12,altitude = 13;
 
@@ -26,7 +26,7 @@ JNIEXPORT void JNICALL Java_com_andrewpetrowski_diploma_raspberry_Sensors_BMP180
 }
 
 
-JNIEXPORT jfloatArray JNICALL Java_com_andrewpetrowski_diploma_raspberry_Sensors_BMP180_GetData
+JNIEXPORT jfloatArray JNICALL Java_io_github_angpysha_diploma_1raspberry_Sensors_BMP180_GetData
         (JNIEnv *env, jobject obj) {
 
     BMP180& ff = BMP180::getInstance();
