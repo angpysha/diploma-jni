@@ -4,13 +4,13 @@ project(raspiinfo)
 set(CMAKE_CXX_STANDARD 11)
 
 include_directories(.
-        /mnt/d/Downloads/jdk-8u151-linux-arm32-vfp-hflt/jdk1.8.0_151/include
-        /mnt/d/Downloads/jdk-8u151-linux-arm32-vfp-hflt/jdk1.8.0_151/include/linux
-        WiringPi/wiringPi
+        /mnt/e/Diploma/toolchains/jdk1.8.0_172/include
+        /mnt/e/Diploma/toolchains/jdk1.8.0_172/include/linux
+        wiringPi/wiringPi
         )
 
 find_library(WIRINGPI wiringPi
-        HINTS WiringPi/wiringPi
+        HINTS wiringPi/wiringPi
         NO_CMAKE_FIND_ROOT_PATH)
 
 
@@ -38,7 +38,7 @@ add_library(raspiinfo SHARED
 target_compile_options(raspiinfo PRIVATE -fPIC)
 
 find_library(WIRDEV wiringPiDev
-        HINTS WiringPi/devLib)
+        HINTS wiringPi/devLib)
 target_link_libraries(raspiinfo
         PUBLIC ${WIRINGPI}
         PUBLIC ${WIRDEV})
